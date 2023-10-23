@@ -128,9 +128,6 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.preview_header {
-
-}
 
 .preview_header > span:not(:last-of-type) {
   margin-right: 12px;
