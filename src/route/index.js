@@ -816,7 +816,7 @@ router.get('/template-6', function (req, res) {
   res.render('template-6', {
     layout: 'template-6',
     page: {
-      title: 'Example Page',
+      title: 'template 6',
     },
     header: [
       {

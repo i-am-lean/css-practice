@@ -21,28 +21,12 @@
     {{#with info}}
         <div class="info">
             <h1 class="info_title">{{title}}</h1>
-            <p class="description">{{description}}</p>
-            {{#each list}}
-                <div class="msg">
-                    <strong class="msg_name">
-                        {{name}}
-                    </strong>
-                    <p class="msg_text">
-                        {{message}}
-                    </p>
-                    <span class="msg_day">
-                        {{day}}
-                    </span>
-                </div>
-            {{/each}}
-
-            <a href="#" class="messages_link">All messages</a>
+            <p class="info_d">{{description}}</p>
         </div>
     {{/with}}
 
     {{#with form}}
         <form class="form">
-            <h2 class="form_title">{{title}}</h2>
 
             <div class="form_input_list">
                 {{#each inputs}}
@@ -50,26 +34,60 @@
                 {{/each}}
             </div>
 
-            <button type="submit" class="form_button">{{button}}</button>
-
             <div class="form_checkbox">
                 <input type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}" >
                 <div></div> 
                 <label for="{{checkbox.name}}">{{checkbox.label}}</label>
             </div>
 
+             <button type="submit" class="form_button">{{button}}</button>
+
+             {{> divider}}
+
             <p class="form_info">{{info}}</p>
         </form>
     {{/with}}
 </main>
 
-<div class="advantages">
-    {{#each advantages}}
-        <div>
-            <strong>{{title}}</strong>
-            <p>{{text}}</p>
+<div class="updates">
+    {{#with updates}}
+    <h3 class="title_updates">{{title}}</h3>
+    <div class="holder">
+        {{!-- <div class="vector">32x32</div> --}}
+        {{#each list}}
+            
+            
+            <div class="list"> 
+                <span class="icon{{id}}">32x32</span>
+                <p class="list_user">@{{nickname}}</strong>
+                <p class="list_description">{{description}}</p>
+            </div>
+
+        {{/each}}
+    </div>
+    
+
+        {{#with show_all}}
+            <a href="{{url}}" class="show">{{text}}</a>
+        {{/with}}
+
+    {{/with}}
+</div>
+
+<div class="expirience">
+    {{#with expirience}}
+        
+        <h2 class="expirience_title">{{title}}</h2>
+        <badge class="badge_expirience">{{badge}}</badge>
+        <div class="forms">       
+            {{#each list}}
+                <div class="msg">
+                    <div class="msg_name">{{name}}</div>
+                    <div class="msg_details">{{details}}</div>
+                </div>  
+            {{/each}}
         </div>
-    {{/each}}
+    {{/with}}
 </div>
     
 
