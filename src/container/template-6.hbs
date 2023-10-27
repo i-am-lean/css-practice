@@ -56,11 +56,17 @@
         {{!-- <div class="vector">32x32</div> --}}
         {{#each list}}
             
-            
             <div class="list"> 
-                <span class="icon{{id}}">32x32</span>
-                <p class="list_user">@{{nickname}}</strong>
-                <p class="list_description">{{description}}</p>
+                <div class="list_icon">
+                    <span class="icon">32x32</span>
+                </div>
+                
+            
+                <div class="box">
+                    <p class="box_user">@{{nickname}}</strong>
+                    <p class="box_description">{{description}}</p>
+                </div>
+                
             </div>
 
         {{/each}}

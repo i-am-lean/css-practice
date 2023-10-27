@@ -320,72 +320,84 @@
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
-  flex-direction: column;
-   
-}
-
-.list > span.icon {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-
-  height: 32px;
-  width: 32px;
-  font-size: 12px;
-  padding: 8px 0px;
-}
-
-
-.list > span.icon#1 {
-  background-color: #007BFF;
-  
-}
-
-.list > span.icon#2 {
-  background-color: #E83E8C;
- 
-}
-
-.list > span.icon#3 {
-  background-color: #6F42C1;
+  flex-direction: column;   
+  gap: 24px;
 }
 
 .list {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.list:nth-of-type(1) .list_icon {
+  width: 32px;
+  height: 32px;
+  background-color: #007BFF;
+}
+
+.list:nth-of-type(2) .list_icon {
+  width: 32px;
+  height: 32px;
+  background-color: #E83E8C;
+}
+
+.list:nth-of-type(3) .list_icon  {
+  width: 32px;
+  height: 32px;
+  background-color: #6F42C1;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  font-size: 12px;
+  weight: var(--weight-text);
+}
+
+
+.box {
   display: flex;
   padding-bottom: 0px;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   flex: 1 0 0;
-  border-bottom: 1px solid #DEE2E6;
-    
+  border-bottom: 1px solid #DEE2E6; 
+  width: 910px;
+  height: 60px;
 }
 
-.list_user {
+.box_user {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 
   color: #6C757D;
+  justify-content: space-between;
+  align-self: stretch;
 
   
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
+  width: 910px;
+  height: 15px;   
 }
 
-.list_desciption {
+.box_desciption {
+  display: flex;
   color: #6C757D;
+  justify-content: space-between;
+  align-self: stretch;
  
   font-size: 16px;
   font-weight: 400;
   line-height: 100%; 
+  width: 910px;
+  height: 16px;   
 }
 
 .show {
@@ -410,6 +422,7 @@
 
   border-radius: 4px;
   background: #F8F9FA;
+  position: relative;
 }
 
 .badge_expirience {
@@ -422,12 +435,17 @@
   line-height: 28px;
   width: 90px;
   height: 52px;
-  align-content: center;
+  align-content: end;
   gap: 12px;
-
-
-
-
+  top: 1500px;
+  left: 500px;
+  transform: rotate(40deg); 
+  /* transform-origin: top left; */
+  align-items: flex-end;
+  margin: 0 auto 0 auto;
+  margin-left: 900px;
+  margin-top: -120px;
+  
 }
 
 .expirience_title {
@@ -439,6 +457,7 @@
   font-weight: 700px;
   font-size: 42px;
   line-height: 120%;
+  padding: 24px;
 }
 
 
@@ -488,9 +507,6 @@
 
 
 
-.advantages > div >p {
-  color: #767676;
-  font-size: var(--size-d);
-  line-height: 150%;
-}
+
+
 
