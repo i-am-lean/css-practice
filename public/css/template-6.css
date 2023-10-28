@@ -25,6 +25,7 @@
   --weight-text: 400;
 
   --page-width: 1000;
+
 }
 
 /* ========================= */
@@ -437,14 +438,15 @@
   height: 52px;
   align-content: end;
   gap: 12px;
-  top: 1500px;
-  left: 500px;
+  top: 100px;
+  left: 50px;
   transform: rotate(40deg); 
   /* transform-origin: top left; */
   align-items: flex-end;
   margin: 0 auto 0 auto;
   margin-left: 900px;
   margin-top: -120px;
+  position: absolute;
   
 }
 
