@@ -969,6 +969,7 @@ router.get('/template-6', function (req, res) {
   //                  ↑↑ сюди вводимо JSON дані
 })
 
+
 router.get('/template-7', function (req, res) {
   // res.render генерує нам HTML сторінку
 
@@ -1075,5 +1076,15 @@ router.get('/template-7', function (req, res) {
   //                  ↑↑ сюди вводимо JSON дані
 })
 
+router.get('/slack', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('slack', {
+    layout: null,
+
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
 // Підключаємо роутер до бек-енду
-module.exports = router
+module.exports = router 
